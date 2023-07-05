@@ -33,7 +33,7 @@ export class PasswordInputComponent implements OnInit {
   checkPassStrength(pass: string): strength {
     const isEmpty = pass.length === 0;
     if (isEmpty) return [styles.grey, styles.grey, styles.grey];
-    const isLongEnough = pass.length > 8;
+    const isLongEnough = pass.length >= 8;
     if (!isLongEnough) return [styles.red, styles.red, styles.red];
     let complexity = 0;
     const hasLetter = letterRegExp.test(pass);
