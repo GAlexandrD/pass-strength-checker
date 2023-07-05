@@ -22,6 +22,7 @@ const digitRegExp = /[0-9]/;
 export class PasswordInputComponent implements OnInit {
   password = new FormControl('');
   passStrength: strength = [styles.grey, styles.grey, styles.grey];
+  isShowPass: boolean = false;
 
   ngOnInit(): void {
     this.password.valueChanges.subscribe((value) => {
