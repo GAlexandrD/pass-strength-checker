@@ -5,9 +5,8 @@ export enum strength {
   easy = 'easy',
   medium = 'medium',
   reliable = 'reliable',
-  short = 'short'
-} 
-
+  short = 'short',
+}
 
 @Injectable({
   providedIn: 'root',
