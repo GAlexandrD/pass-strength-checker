@@ -1,5 +1,4 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-
 import {
   PassStrengthService,
   strength,
@@ -26,6 +25,7 @@ export const passStrengthStyles: { [key in strength]: passStrengthStyle } = {
   selector: 'app-password-strength',
   templateUrl: './password-strength.component.html',
   styleUrls: ['./password-strength.component.scss'],
+  providers: [PassStrengthService],
 })
 export class PasswordStrengthComponent implements OnChanges {
   @Input() password: string = '';
