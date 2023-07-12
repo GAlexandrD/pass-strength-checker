@@ -28,7 +28,6 @@ export class PasswordFormExampleComponent implements OnInit, OnDestroy {
     );
     this.passSub = this.form.controls['password'].valueChanges.subscribe(
       (value) => {
-        console.log(value);
         this.password = value;
       }
     );
